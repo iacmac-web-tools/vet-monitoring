@@ -1,0 +1,1010 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.66.0" />
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+<link rel="canonical" type="text/html" href="https://vet.amrcloud.net/docs/08/02/">
+
+<link rel="manifest" href="/manifest.json">
+<link rel="shortcut icon" href="/favicons/favicon.ico">
+
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
+
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<title>8.2 Решение задачи | VET. Monitoring</title><meta property="og:title" content="8.2 Решение задачи" />
+<meta property="og:description" content="8.2.1. Обзор структуры данных В первую очередь необходимо познакомиться с данными и изучить их структуру. Откроем вкладку «Структура данных», в окне «Структура данных по» в нижней части экрана слева по очереди выберем «Вид_животного», «Образец» и «Geo_point», каждый раз нажимая кнопку «Отобразить» для отображения диаграмм.
+Все изоляты относятся к виду E.coli. Структура по видам животных показывает, что данные содержат МПК 237 изолятов от кур и 145 от коров, всего 382 изолята (рисунок 1)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://vet.amrcloud.net/docs/08/02/" /><meta property="og:image" content="https://vet.amrcloud.net/images/cover.png"/><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2024-01-15T13:51:08&#43;03:00" /><meta property="og:site_name" content="VET. Monitoring" />
+<meta itemprop="name" content="8.2 Решение задачи">
+<meta itemprop="description" content="8.2.1. Обзор структуры данных В первую очередь необходимо познакомиться с данными и изучить их структуру. Откроем вкладку «Структура данных», в окне «Структура данных по» в нижней части экрана слева по очереди выберем «Вид_животного», «Образец» и «Geo_point», каждый раз нажимая кнопку «Отобразить» для отображения диаграмм.
+Все изоляты относятся к виду E.coli. Структура по видам животных показывает, что данные содержат МПК 237 изолятов от кур и 145 от коров, всего 382 изолята (рисунок 1).">
+<meta itemprop="dateModified" content="2024-01-15T13:51:08&#43;03:00" />
+<meta itemprop="wordCount" content="1885">
+<meta itemprop="image" content="https://vet.amrcloud.net/images/cover.png"/>
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://vet.amrcloud.net/images/cover.png"/>
+
+<meta name="twitter:title" content="8.2 Решение задачи"/>
+<meta name="twitter:description" content="8.2.1. Обзор структуры данных В первую очередь необходимо познакомиться с данными и изучить их структуру. Откроем вкладку «Структура данных», в окне «Структура данных по» в нижней части экрана слева по очереди выберем «Вид_животного», «Образец» и «Geo_point», каждый раз нажимая кнопку «Отобразить» для отображения диаграмм.
+Все изоляты относятся к виду E.coli. Структура по видам животных показывает, что данные содержат МПК 237 изолятов от кур и 145 от коров, всего 382 изолята (рисунок 1)."/>
+
+
+
+
+
+<link rel="preload" href="/scss/main.min.be6494e0acfc040521a9db78c0bf7475414f1044f97f5b835bfc8511197f7d30.css" as="style">
+<link href="/scss/main.min.be6494e0acfc040521a9db78c0bf7475414f1044f97f5b835bfc8511197f7d30.css" rel="stylesheet" integrity="">
+
+<link rel="stylesheet" href="https://vet.amrcloud.net/css/jquery.fancybox.min.css"><link rel="stylesheet" href="https://vet.amrcloud.net/css/cookie.min.css">
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+<script
+  src="https://unpkg.com/lunr@2.3.8/lunr.min.js"
+  integrity="sha384-vRQ9bDyE0Wnu+lMfm57BlYLO0/XauFuKpVsZPs7KEDwYKktWi5+Kz3MP8++DFlRY"
+  crossorigin="anonymous"></script>
+
+
+
+
+
+
+<script defer src="https://vet.amrcloud.net/js/jquery.fancybox.min.js" ></script>
+
+<script defer src="https://vet.amrcloud.net/js/lunr.stemmer.support.js" ></script>
+
+<script defer src="https://vet.amrcloud.net/js/lunr.multi.js" ></script>
+
+<script defer src="https://vet.amrcloud.net/js/lunr.ru.js" ></script>
+
+<script defer src="https://vet.amrcloud.net/js/cookie.min.js" ></script>
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S6BVV06T8J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S6BVV06T8J');
+</script>
+
+  </head>
+  <body class="td-page">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/">
+		<span class="navbar-logo"></span><span class="text-uppercase font-weight-bold">VET. Monitoring</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				
+				
+				<a class="nav-link active" href="/docs/" ><span class="active">Руководство</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/authors/" ><span>Авторы</span></a>
+			</li>
+			
+			
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; Поиск"
+  aria-label="Поиск"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="/offline-search-index.json"
+  data-offline-search-base-href="/"
+  data-offline-search-max-results="10"
+>
+
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+          </div>
+          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+          </div>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+<div class="td-content">
+	<h1>8.2 Решение задачи</h1>
+	
+	<header class="article-meta">
+		
+		
+			
+				
+
+
+			
+				
+
+
+			
+		
+		
+	</header>    
+	<h2 id="821-обзор-структуры-данных">8.2.1. Обзор структуры данных</h2>
+<p>В первую очередь необходимо познакомиться с данными и изучить их структуру. Откроем вкладку «Структура данных», в окне «Структура данных по» в нижней части экрана слева по очереди выберем «Вид_животного», «Образец» и «Geo_point», каждый раз нажимая кнопку «Отобразить» для отображения диаграмм.</p>
+<p>Все изоляты относятся к виду E.coli. Структура по видам животных показывает, что данные содержат МПК 237 изолятов от кур и 145 от коров, всего 382 изолята (рисунок 1).</p>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-практическая-задача-структура-данных-по-виду-животного">
+
+
+  <a data-fancybox="" href="/images/8.2.1.png" data-caption="Практическая задача. Структура данных по виду животного">
+
+
+  <img src="/images/8.2.1.png" alt=""  >
+</a>
+
+
+  
+  
+  <figcaption data-pre="Рисунок  " data-post=": " class="numbered">
+    Практическая задача. Структура данных по виду животного
+  </figcaption>
+
+
+</figure>
+
+<p>Все изоляты от коров были выделены из фекалий, изоляты от кур были выделены из фекалий — 84 изолята и из смывов с тушки — 153 изолята (рисунок 2).</p>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-практическая-задача-структура-данных-по-образцу-куры">
+
+
+  <a data-fancybox="" href="/images/8.2.2.png" data-caption="Практическая задача. Структура данных по образцу (куры)">
+
+
+  <img src="/images/8.2.2.png" alt=""  >
+</a>
+
+
+  
+  
+  <figcaption data-pre="Рисунок  " data-post=": " class="numbered">
+    Практическая задача. Структура данных по образцу (куры)
+  </figcaption>
+
+
+</figure>
+
+<p>Можно выполнить оценку структуры данных в зависимости от места отбора проб.</p>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-практическая-задача-структура-данных-по-месту-отбора-проб">
+
+
+  <a data-fancybox="" href="/images/8.2.3.png" data-caption="Практическая задача. Структура данных по месту отбора проб">
+
+
+  <img src="/images/8.2.3.png" alt=""  >
+</a>
+
+
+  
+  
+  <figcaption data-pre="Рисунок  " data-post=": " class="numbered">
+    Практическая задача. Структура данных по месту отбора проб
+  </figcaption>
+
+
+</figure>
+
+<p>Из рисунка 3 видно, что географический охват исследований составил 16 регионов России, от Южного Кавказа до Приморского края. Наибольшее количество изолятов было отобрано из Белгородской, Новосибирской, Калужской, Воронежской областей, Дагестана, Пензенской, Челябинской, Тверской областей, Республики Северная Осетия — Алания.</p>
+<p>Таким образом, среди регионов с наибольшим количеством изолятов представлены разные части страны — Центральная Россия, Сибирь, Кавказ, Поволжье.</p>
+<p>Это позволяет сделать вывод, что данные репрезентативны для страны и позволяют распространить выводы на отечественное сельское хозяйство в целом.</p>
+<h2 id="822-спектр-устойчивости-к-антибиотикам">8.2.2. Спектр устойчивости к антибиотикам</h2>
+<p><strong>Влияние вида образца</strong></p>
+<p>Все изоляты от коров были выделены из фекалий, а от кур — из фекалий и смывов с тушки.</p>
+<p>Для того, чтобы корректно сравнивать данные от коров и кур, необходимо учитывать влияние фактора образца. Если спектры устойчивости изолятов от кур, выделенных из фекалий и смывов с тушки значительно различаются, для сравнения с изолятами от коров необходимо брать куриные изоляты только из фекалий. Если отличия между спектрами устойчивости куриных изолятов из фекалий и из смывов с тушек несущественное, для сравнения спектров устойчивости от кур и коров можно брать все изоляты от кур.</p>
+<p>Посмотрим на спектры устойчивости изолятов от кур, выделенных их фекалий и из смывов с тушки. Для этого откроем вкладку <em>«Антибиотики все»</em>, в поле <em>«Вид_животного»</em> выберем <em>«Курица»</em>, а в поле <em>«Образец»</em> выберем сначала <em>«Смыв с тушки»</em>, и, нажав кнопку <em>«Отобразить»</em>, выведем на экран соответствующую диаграмму, а затем выберем <em>«Фекалии»</em>.</p>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-практическая-задача-спектр-устойчивости-кишечной-палочки-выделенной-от-кур-из-смывов-с-тушки-критерии-клинической-устойчивости-еucast-2022">
+
+
+  <a data-fancybox="" href="/images/8.2.4.png" data-caption="Практическая задача. Спектр устойчивости кишечной палочки, выделенной от кур из смывов с тушки (критерии клинической устойчивости ЕUCAST 2022)">
+
+
+  <img src="/images/8.2.4.png" alt=""  >
+</a>
+
+
+  
+  
+  <figcaption data-pre="Рисунок  " data-post=": " class="numbered">
+    Практическая задача. Спектр устойчивости кишечной палочки, выделенной от кур из смывов с тушки (критерии клинической устойчивости ЕUCAST 2022)
+  </figcaption>
+
+
+</figure>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-практическая-задача-спектр-устойчивости-кишечной-палочки-выделенной-от-кур-из-фекалий-критерии-клинической-устойчивости-еucast-2022">
+
+
+  <a data-fancybox="" href="/images/8.2.5.png" data-caption="Практическая задача. Спектр устойчивости кишечной палочки, выделенной от кур из фекалий (критерии клинической устойчивости ЕUCAST 2022)">
+
+
+  <img src="/images/8.2.5.png" alt=""  >
+</a>
+
+
+  
+  
+  <figcaption data-pre="Рисунок  " data-post=": " class="numbered">
+    Практическая задача. Спектр устойчивости кишечной палочки, выделенной от кур из фекалий (критерии клинической устойчивости ЕUCAST 2022)
+  </figcaption>
+
+
+</figure>
+
+<p>Зелёный столбец на графиках — это доля изолятов из категории «Чувствительный», жёлтый столбец — доля изолятов из категории «Чувствительный при увеличенной экспозиции (ранее эта категория называлась «Промежуточно устойчивый», красный — из категории «Устойчивый». Значение «N» под столбцами показывает количество изолятов, исследованных на каждый антибиотик. Чёрточки вверху столба показывают диапазон значений в 95%-доверительном интервале.</p>
+<p>Как видно из рисунка, значительное отличие заметно только для одного антибиотика — ампициллина, устойчивость к которому значительно выше у изолятов из фекалий.</p>
+<p>Таким образом, для сравнения спектров устойчивости изолятов от коров и кур, для последних можно использовать объединённые данные по двумвидам образцов — смывам с тушки и фекалиям.</p>
+<p><strong>Сравнение спектров устойчивости от коров и от кур</strong></p>
+<p>Посмотрим спектр устойчивости отдельно для кур и для коров. Для этого необходимо открыть вкладку <em>«Антибиотики (все)»</em>, в поле <em>«Вид_животного»</em> (вверху экрана на панели <em>«Параметры основные»</em>) выберем сначала <em>«Корова»</em>, а потом выберем <em>«Курица»</em>, выводя графики на экран.</p>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-практическая-задача-спектр-устойчивости-кишечной-палочки-выделенной-от-кур-критерии-клинической-устойчивости-еucast-2022">
+
+
+  <a data-fancybox="" href="/images/8.2.6.png" data-caption="Практическая задача. Спектр устойчивости кишечной палочки, выделенной от кур (критерии клинической устойчивости ЕUCAST 2022)">
+
+
+  <img src="/images/8.2.6.png" alt=""  >
+</a>
+
+
+  
+  
+  <figcaption data-pre="Рисунок  " data-post=": " class="numbered">
+    Практическая задача. Спектр устойчивости кишечной палочки, выделенной от кур (критерии клинической устойчивости ЕUCAST 2022)
+  </figcaption>
+
+
+</figure>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-практическая-задача-спектр-устойчивости-e-coli-выделенной-от-коров-критерии-клинической-устойчивости-еucast-2022">
+
+
+  <a data-fancybox="" href="/images/8.2.7.png" data-caption="Практическая задача. Спектр устойчивости E. coli, выделенной от коров (критерии клинической устойчивости ЕUCAST 2022)">
+
+
+  <img src="/images/8.2.7.png" alt=""  >
+</a>
+
+
+  
+  
+  <figcaption data-pre="Рисунок  " data-post=": " class="numbered">
+    Практическая задача. Спектр устойчивости E. coli, выделенной от коров (критерии клинической устойчивости ЕUCAST 2022)
+  </figcaption>
+
+
+</figure>
+
+<p>Из рисунков видно, что спектр устойчивости бактерий от кур и коров имеет значительные отличия. Практически ко всем исследованным антибиотикам устойчивость изолятов от кур значительно выше, чем от коров.</p>
+<p>У изолятов от коров устойчивость к ампициллину, хлорамфениколу, гентамицину, триметоприму, комбинации триметоприм-сульфаметоксазол, колистину, цефотаксиму, ципрофлоксацину и левофлоксацину составила составила менее 15%. В то же время у выделенных от кур изолятов устойчивость к ципрофлоксацину, левофлоксацину, триметоприму и ампициллину была более 50%, к гентамицину, колистину и хлорамфениколу — от 20 до 50%, к цефотаксиму — порядка 10%, в отношении комбинации триметоприм/сульфаметоксазол 64% изолятов были отнесены к категории <em>«чувствительные при увеличенной экспозиции»</em>. Таким образом, ситуацию с антибиотикорезистентностью в птицеводстве хуже, чем при выращивании КРС. Куры могут рассматриваться как приоритетный, по сравнению с коровами, вид животных для принятия управленческих мер, основа которых — минимизации использования антибиотиков.</p>
+<h2 id="823-выбранные-антибиотики">8.2.3. Выбранные антибиотики</h2>
+<p>Целесообразно отдельно рассмотреть устойчивость к наиболее важным из исследованных антибиотиков, например, колистин (группа полимиксинов), цефотаксим (цефалоспорин III поколения) и фторхинолоны (ципрофлоксацин и левофлоксацин), все эти антимикробные средства указаны в рекомендациях международных организаций — ВОЗ, МЭБ и ФАО как антибиотики, применение которых в животноводстве представляет наибольший риск распространения антибиотикорезистентности среди зоонозных бактерий и угрозу здравоохранению 
+
+
+
+
+<a href="https://vet.amrcloud.netdocs/literature/#14">
+    <abbr title="WHO. Critically important antimicrobials for human medicine, 6th revision. Geneva: World Health Organization; 2019" class="initialism">[14]</abbr>
+</a>
+
+
+
+
+<a href="https://vet.amrcloud.netdocs/literature/#15">
+    <abbr title="European Medicines Agency. Answer to the request from the European Commission for updating the scientific advice on the impact on public health and animal health of the use of antibiotics in animals — Categorisation of antimicrobials." class="initialism">[15]</abbr>
+</a>
+
+
+
+
+<a href="https://vet.amrcloud.netdocs/literature/#17">
+    <abbr title="OIE list of critical antimicrobials" class="initialism">[17]</abbr>
+</a>. Также к группе наиболее важных антибиотиков относится меропенем из класса карбапенемов. ВОЗ включила устойчивые к карбапенемам и продуцирующие БЛРС <em>E.coli</em> в группу критического приоритета для разработки новых антибиотиков 
+
+
+
+
+<a href="https://vet.amrcloud.netdocs/literature/#13">
+    <abbr title="Tacconelli E, Carrara E, Savoldi A, Harbarth S, Mendelson M, Mannet DL, Pulcini C, Kahlmeter G, Kluytmans J, Carmeli Y, Ouellette M, Outterson K, Patel J et al. Discovery, research, and development of new antibiotics: the WHO priority list of antibiotic-resistant bacteria and tuberculosis. Lancet Infect Dis. 2017" class="initialism">[13]</abbr>
+</a>.</p>
+<p>Устойчивых к меропенему изолятов не было выделено ни от кур, ни от коров, что говорит о том, что данный антибиотик, не зарегистрированный в России для продуктивных животных 
+
+
+
+
+<a href="https://vet.amrcloud.netdocs/literature/#18">
+    <abbr title="Государственный реестр лекарственных средств для ветеринарного применения" class="initialism">[18]</abbr>
+</a>, либо не применяется совсем, либо применяется редко.</p>
+<p>Для цефотаксима, колистина, ципрофлоксацина и левофлоксацина для удобства построим графики зависимости устойчивости от вида животного и сравним данные с данными из Евросоюза. Поскольку в базе данных Евросоюза были использованы критерии микробиологической устойчивости EUCAST ECOFFs (Epidemiological Cut-off Values), точки отсечения эпидемиологической (микробиологической) устойчивости, используем интерпретацию данных по EUCAST ECOFFs.</p>
+<p>В целом значения микробиологической устойчивости также важны для оценки распространения антибиотикорезистентности, и их следует использовать в мониторинге наряду со значениями клинической устойчивости.</p>
+<p>Для построения диаграмм откроем вкладку <em>«Выбранные антибиотики»</em>, затем в поле <em>«Антибиотик»</em> выберем <em>«cefotaxime_sir»</em> (либо <em>сefotaxime_mic</em>, если переключатель в поле <em>«Источник данных S/I/R»</em>) стоит в позиции <em>«Автоинтерпретация из МПК»</em>). Откроем подвкладку <em>«Группировать по»</em> и в качестве группирующего признака выберем <em>«Вид_животного»</em>, затем нажмем на кнопку <em>«Отобразить»</em>. Повторим данные действия для ципрофлоксацина, левофлоксацина и колистина.</p>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-практическая-задача-устойчивость-к-цефотаксиму-в-зависимости-от-вида-животного-интерпретация-по-eucast-ecoffs">
+
+
+  <a data-fancybox="" href="/images/8.2.8.png" data-caption="Практическая задача. Устойчивость к цефотаксиму в зависимости от вида животного (интерпретация по EUCAST ECOFFs)">
+
+
+  <img src="/images/8.2.8.png" alt=""  >
+</a>
+
+
+  
+  
+  <figcaption data-pre="Рисунок  " data-post=": " class="numbered">
+    Практическая задача. Устойчивость к цефотаксиму в зависимости от вида животного (интерпретация по EUCAST ECOFFs)
+  </figcaption>
+
+
+</figure>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-практическая-задача-устойчивость-к-ципрофлоксацину-в-зависимости-от-вида-животного-интерпретация-по-eucast-ecoffs">
+
+
+  <a data-fancybox="" href="/images/8.2.9.png" data-caption="Практическая задача. Устойчивость к ципрофлоксацину в зависимости от вида животного (интерпретация по EUCAST ECOFFs)">
+
+
+  <img src="/images/8.2.9.png" alt=""  >
+</a>
+
+
+  
+  
+  <figcaption data-pre="Рисунок  " data-post=": " class="numbered">
+    Практическая задача. Устойчивость к ципрофлоксацину в зависимости от вида животного (интерпретация по EUCAST ECOFFs)
+  </figcaption>
+
+
+</figure>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-практическая-задача-устойчивость-к-левофлоксацину-в-зависимости-от-вида-животного-интерпретация-по-eucast-ecoffs">
+
+
+  <a data-fancybox="" href="/images/8.2.10.png" data-caption="Практическая задача. Устойчивость к левофлоксацину в зависимости от вида животного (интерпретация по EUCAST ECOFFs)">
+
+
+  <img src="/images/8.2.10.png" alt=""  >
+</a>
+
+
+  
+  
+  <figcaption data-pre="Рисунок  " data-post=": " class="numbered">
+    Практическая задача. Устойчивость к левофлоксацину в зависимости от вида животного (интерпретация по EUCAST ECOFFs)
+  </figcaption>
+
+
+</figure>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure--практическая-задача-устойчивость-к-колистину-в-зависимости-от-вида-животного-интерпретация-по-eucast-ecoffs">
+
+
+  <a data-fancybox="" href="/images/8.2.11.png" data-caption="Практическая задача. Устойчивость к колистину в зависимости от вида животного (интерпретация по EUCAST ECOFFs)">
+
+
+  <img src="/images/8.2.11.png" alt=""  >
+</a>
+
+
+  
+  
+  <figcaption data-pre="Рисунок  " data-post=": " class="numbered">
+    Практическая задача. Устойчивость к колистину в зависимости от вида животного (интерпретация по EUCAST ECOFFs)
+  </figcaption>
+
+
+</figure>
+
+<p>К цефотаксиму устойчивыми отказались 8% изолятов от коров и 10% изолятов от кур. Это относительно высокие значения. Так, в среднем по Евросоюзу согласно данным за 2020 год 
+
+
+
+
+<a href="https://vet.amrcloud.netdocs/literature/#3">
+    <abbr title="ECDC/EFSA database «Antimicrobial resistance in Europe»" class="initialism">[3]</abbr>
+</a>, только 1,5% изолятов от бройлеров были устойчивы к цефотаксиму (при этом для отдельных стран были также зафиксированы высокие значения с максимумом для Мальты — 33%).</p>
+<p>Устойчивыми к ципрофлоксацину и левофлоксацину оказались 88% изолятов от кур и 9% изолятов от коров. В Евросоюзе при этом средняя устойчивость была зафиксирована на уровне 55%, однако в отдельных странах достигала и намного больших значений, в частности 92% в Латвии и 96% в Словакии 
+
+
+
+
+<a href="https://vet.amrcloud.netdocs/literature/#3">
+    <abbr title="ECDC/EFSA database «Antimicrobial resistance in Europe»" class="initialism">[3]</abbr>
+</a>.</p>
+<p>К колистину устойчивыми оказались 7,6% изолятов от коров и 37% изолятов от кур. Последнее значение может быть сочтено чрезвычайно высоким. Так, по данным из Евросоюза за 2020 г., в среднем 1,2% изолятов <em>E.coli</em> от бройлеров 
+
+
+
+
+<a href="https://vet.amrcloud.netdocs/literature/#3">
+    <abbr title="ECDC/EFSA database «Antimicrobial resistance in Europe»" class="initialism">[3]</abbr>
+</a> оказались устойчивыми к колистину, среди, которых данный показатель оказался значительно выше среднего — Болгария (6%), Кипр (10%), Германия (9%) и Румыния (4%).</p>
+<p>Необходимо отметить, что такой высокий уровень устойчивости к наиболее важным антибиотикам характерен не только для нашей страны. Например, в Китае были зафиксированы уровни устойчивости к колистину кишечной палочки от бройлеров на уровне 35% 
+
+
+
+
+<a href="https://vet.amrcloud.netdocs/literature/#5">
+    <abbr title="Zhang P, Shen Z, Zhang C, Song L, Wang B, Shang J, Yue X, Qu Z, Li X, Wu L, Zheng Y, Aditya A, Wang Y, Xu S, Wu C. Surveillance of antimicrobial resistance among Escherichia coli from chicken and swine, China, 2008–2015. Vet Microbiol. 2017;203:49–55" class="initialism">[5]</abbr>
+</a>.</p>
+<h2 id="824-диаграмма-распределения-мпк">8.2.4. Диаграмма распределения МПК</h2>
+<p>С целью проверки валидности наших данных сравним распределение МПК с табличным на примере цефотаксима.</p>
+<p>Для этого во вкладке <em>«Выбранный антибиотик»</em> откроем подкладку <em>«МПК»</em> и выведем на экран график распределения МПК для цефотаксима.</p>
+<p>Чтобы увидеть табличное распределение EUCAST, необходимо воспользоваться разделом официального сайта 
+
+
+
+
+<a href="https://vet.amrcloud.netdocs/literature/#19">
+    <abbr title="EUCAST. MIC and zone diameter distributions and ECOFFs" class="initialism">[19]</abbr>
+</a> «EUCAST MIC distributions and ECOFFs» («Распределение МПК и микробиологические точки отсечения»), далее кнопка <em>«Search database»</em> («Поиск по базе данных»), выбираем из списка в поле <em>«Antimicrobial»</em> («Антимикробное средство») антибиотиков cefotaxime и в открывшемся списке бактерий выбрать <em>«Escherichia coli»</em>, после чего на экран будет выведен график распределения.</p>
+<p>Сравнение полученного графика с табличными показывает, что диапазон зафиксированных нами концентраций не выходит за рамки диапазона EUCAST, значения пиков также совпадают, из чего делаем вывод о валидности наших данных. Схожая картина была получена и для других антибиотиков.</p>
+<p>Если полученный график оказался бы смещён в правую или левую сторону относительно табличного распределения, это бы не означало автоматически, что данные не валидны, но послужило бы указанием к более тщательному контролю качества другими способами, в частности, с использованием контрольных штаммов.</p>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-практическая-задача-график-распределения-мпк-для-цефотаксима">
+
+
+  <a data-fancybox="" href="/images/8.2.12.png" data-caption="Практическая задача. График распределения МПК для цефотаксима">
+
+
+  <img src="/images/8.2.12.png" alt=""  >
+</a>
+
+
+  
+  
+  <figcaption data-pre="Рисунок  " data-post=": " class="numbered">
+    Практическая задача. График распределения МПК для цефотаксима
+  </figcaption>
+
+
+</figure>
+
+<p>По оси Х на графике отложены значения МПК в мг/л, по оси У — доля изолятов, для которых было зафиксировано данное МПК. Как и на предыдущих диаграммах, зелёные столбцы обозначают изоляты в категории «Чувствительный», красные — в категории «Устойчивый».</p>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-практическая-задача-график-распределения-мпк-для-цефотаксима-eucast">
+
+
+  <a data-fancybox="" href="/images/8.2.13.png" data-caption="Практическая задача. График распределения МПК для цефотаксима (EUCAST)">
+
+
+  <img src="/images/8.2.13.png" alt=""  >
+</a>
+
+
+  
+  
+  <figcaption data-pre="Рисунок  " data-post=": " class="numbered">
+    Практическая задача. График распределения МПК для цефотаксима (EUCAST)
+  </figcaption>
+
+
+</figure>
+
+<p>На графике по оси Х — МПК в мг/л, по оси У — доля изолятов с указанным МПК (от общего количества исследованных).</p>
+<h2 id="825-карта-устойчивости">8.2.5. Карта устойчивости</h2>
+<p>Чтобы выяснить, носит ли устойчивость локальный характер или характерна для масштабов всей страны, посмотрим карту устойчивости на примере ципрофлоксацина у изолятов от кур. Для этого во вкладке «Выбранный антибиотик» выберем подкладку «Карта» и выведем карту на экран.</p>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-практическая-задача-карта-устойчивости-к-ципрофлоксацину-изолятов-от-кур-критерии-клинической-устойчивости-еucast-2022">
+
+
+  <a data-fancybox="" href="/images/8.2.14.png" data-caption="Практическая задача. Карта устойчивости к ципрофлоксацину изолятов от кур (критерии клинической устойчивости ЕUCAST 2022)">
+
+
+  <img src="/images/8.2.14.png" alt=""  >
+</a>
+
+
+  
+  
+  <figcaption data-pre="Рисунок  " data-post=": " class="numbered">
+    Практическая задача. Карта устойчивости к ципрофлоксацину изолятов от кур (критерии клинической устойчивости ЕUCAST 2022)
+  </figcaption>
+
+
+</figure>
+
+<p>Зелёный и красный цвет на кругах обозначают долю чувствительных и устойчивых изолятов, число — количество изолятов той или иной категории.</p>
+<p>Из карты видно несмотря на то, что наибольшая доля устойчивых изолятов зафиксирована в Поволжье, в целом устойчивость достаточна распространена в разных частях страны.</p>
+<p>Аналогичная картина глобальной устойчивости была получена и для других антибиотиков. Таким образом, устойчивость не фиксируется в каких-то отдельных регионов, но, скорее, распространена в масштабах всей страны.</p>
+<h2 id="826-ассоциированная-устойчивость">8.2.6. Ассоциированная устойчивость</h2>
+<p><strong>Матрица ассоциированной устойчивости</strong></p>
+<p>Построим матрицу ассоциированной устойчивости, чтобы определить вероятность наличия одновременной резистентности изолята к двум разным АМП.</p>
+<p>Для этого во вкладке <em>«Ассоциированная устойчивость»</em> выберем подвкладку <em>«Матрица»</em>.</p>
+<p>Близкая к 100% ассоциированная устойчивость зафиксирована к двум антибиотикам из класса фторхинолонов — ципрофлоксацину и левофлоксацину. Наведя курсор на значение <em>«100»</em>, в перекрестье между ципрофлоксацином и левофлоксацином увидим надпись <em>«Если R к levofloxacin_mic → R к ciprofloxacin_mic = 100%»</em>, что означает, если N изолятов устойчивы к левофлоксацину, из них 100% будут устойчивыми и к ципрофлоксацину.</p>
+<p>Наведя курсор на значение <em>«99,35%»</em> во втором перекрестье между ципрофлоксацином и левофлоксацином, увидим надпись <em>«Если R к ciprofloxacin_mic → R к levofloxacin_mic = 99,35%»</em>, что означает, если N изолятов устойчивы к ципрофлоксацину, из них 99,35% будут устойчивыми и к ципрофлоксацину.</p>
+<p>Также высокие уровни устойчивости видны и для других комбинаций антибиотиков, например, 91% изолятов, устойчивых к левофлоксацину, устойчивы также и к триметоприму.</p>
+<p>Таким образом, ципрофлоксацин и левофлоксацин обладают практически 100%-ной перекрёстной устойчивостью. Для целей мониторинга целесообразно не расходовать ресурсы на анализ устойчивости к обоим антибиотикам, но для дальнейших исследований выбрать какой-то один из них. Ципрофлоксацин значительно более активно, чем левофлоксацин применяется в ветеринарии, а также более активно в медицине, и именно его из всех фторхинолонов в первую очередь включают в программы мониторинга устойчивости зоонозных бактерий. Следовательно, из двух фторхинолов в программе мониторинга целесообразно оставить ципрофлоксацин.</p>
+<p><strong>Множественная резистентность</strong></p>
+<p>Множественная резистентность является важным показателем устойчивости бактерий, соответствующие сведения предствавляют как в отчётах 
+
+
+
+
+<a href="https://vet.amrcloud.netdocs/literature/#2">
+    <abbr title="ECDC. The European Union Summary Reports on Antimicrobial Resistance in zoonotic and indicator bacteria from humans, animals and food in 2020/2021" class="initialism">[2]</abbr>
+</a>, так и в научных публикациях 
+
+
+
+
+<a href="https://vet.amrcloud.netdocs/literature/#26">
+    <abbr title="Makarov DA, Ivanova OE, Pomazkova AV, Egoreva MA, Prasolova OV, Lenev SV, Gergel MA, Bukova NK, Karabanov SY. Antimicrobial resistance of commensal Enterococcus faecalis and Enterococcus faecium from foodproducing animals in Russia. Vet World. 2022;15(3):611–621" class="initialism">[26]</abbr>
+</a>
+
+
+
+
+<a href="https://vet.amrcloud.netdocs/literature/#27">
+    <abbr title="Makarov DA, Ivanova OE, Karabanov SY, Gergel MA, Pomazkova AV. Antimicrobial resistance of commensal Escherichia coli from food-producing animals in Russia. Vet World, 2020; 13(10): 2053–2061" class="initialism">[27]</abbr>
+</a>. Как правило, это одновременная устойчивость как минимум к трём антимикробным средствам из разных классов.</p>
+<p>Для определения мультирезистентности изолятов от кур во вкладке <em>«Ассоциированная устойчивость»</em> откроем подвкладку <em>«Множественная устойчивость»</em>. В поле <em>«Антибиотик»</em> необходимо поставить галочки напротив представителя каждого класса антибиотиков. В представленном случае все антибиотики из разных классов, кроме ципрофлоксацина и левофлоксацина, из которых выберем первый.</p>
+<p>В поле <em>«R как минимум к N антибиотикам»</em> выберем значение <em>«3»</em> и увидим, что 147 из 223 изолятов — 65,92% (59,48–71,82 в 95% доверительном интервале) обладают свойством мультирезистентности.</p>
+
+	
+	
+	<hr class="panel-line">
+Изменено 15 января 2024
+
+
+	<ul class="list-unstyled d-flex justify-content-between align-items-center mb-0 pt-3">
+  
+  <li>
+    
+    <a href="/docs/08/01/" class="btn btn-primary"><span class="mr-1">←</span> Назад
+    </a>
+    
+  </li>
+  <li>
+    
+    <a href="/docs/08/03/" class="btn btn-primary"> Далее <span
+        class="ml-1">→</span></a>    
+    
+  </li>
+  
+</ul>
+
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col text-center ">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="МАКМАХ / IACMAC" aria-label="МАКМАХ / IACMAC">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://www.antibiotic.ru/">
+      <i class="fa fa-globe"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Vk" aria-label="Vk">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://vk.com/iacmac">
+      <i class="fab fa-vk"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Telegram" aria-label="Telegram">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://t.me/iacmac">
+      <i class="fab fa-telegram"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="YouTube" aria-label="YouTube">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/iacmac">
+      <i class="fab fa-youtube"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Комментарии, критические замечания, вопросы и пожелания можно направлять на электронную почту: support@antibiotic.ru" aria-label="Комментарии, критические замечания, вопросы и пожелания можно направлять на электронную почту: support@antibiotic.ru">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="mailto:support@antibiotic.ru">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        
+        
+        
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <small class="text-white">&copy; 2024 МАКМАХ Все права защищены</small>
+        <small class="ml-1"><a href="https://policies.google.com/privacy/partners" target="_blank">Политика конфиденциальности</a></small>
+	
+		
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+    <script>
+window.addEventListener('load', function(){
+  window.cookieconsent.initialise({
+   revokeBtn: "<div class='cc-revoke'></div>",
+   type: "opt-in",
+   theme: "classic",
+   palette: {
+       popup: {
+           background: "#000",
+           text: "#fff"
+        },
+       button: {
+           background: "#fd0",
+           text: "#000"
+        }
+    },
+   content: {
+       message: "На нашем сайте включены cookies, потому что мы используем услуги Google Analytics",
+       link: "Узнать больше",
+       deny: "",
+       allow: "Принять",
+       href: "https:\/\/2gdpr.com\/cookies"
+    },
+    onInitialise: function(status) {
+      
+    },
+    onStatusChange: function(status) {
+      
+    }
+  })
+});
+</script>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@8.11.2/dist/mermaid.min.js" integrity="sha384-m8Pdaep6Qk8sW3J6XhPOiwUww3maU9HxZTLvEfSEB4e1UVvTdHyfJsYmEfYqvwLC" crossorigin="anonymous"></script>
+
+
+
+
+<script src='/js/tabpane-persist.js'></script>
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.min.c3ad98592f06b673daf5f29c00d9052aad61500a3d1b76019de623b0f38ff766.js" integrity="sha256-w62YWS8GtnPa9fKcANkFKq1hUAo9G3YBneYjsPOP92Y=" crossorigin="anonymous"></script>
+
+
+
+
+  </body>
+</html>
